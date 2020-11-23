@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "374916569923",
+    "firebase_url": "https://fir-chatapp-1080f.firebaseio.com",
+    "project_id": "fir-chatapp-1080f",
+    "storage_bucket": "fir-chatapp-1080f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374916569923:android:d8ec83e04897278a032df6",
+        "android_client_info": {
+          "package_name": "com.onoh.firebasechatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374916569923-rhcmmk5nj9ha513jj807ocl41v3hfnj5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiIzb5qSmrGwLH69CkDHwp_oTFVIfEyaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374916569923-rhcmmk5nj9ha513jj807ocl41v3hfnj5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
