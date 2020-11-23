@@ -1,4 +1,4 @@
-package com.onoh.firebasechatapp.data.local
+package com.onoh.firebasechatapp.data.model
 
 data class User (
     var userId:String? = null,

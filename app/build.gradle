@@ -35,10 +35,15 @@ dependencies {
     implementation "com.google.android.material:material:1.2.1"
     implementation "androidx.recyclerview:recyclerview:1.1.0"
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'androidx.core:core:1.5.0-alpha05'
 
     //glide
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //viewmodel
+    //architecture component
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.2.0"
 
     //firebase
     implementation 'com.google.firebase:firebase-auth:20.0.1'

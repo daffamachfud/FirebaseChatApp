@@ -12,7 +12,6 @@ import kotlinx.android.synthetic.main.activity_user.*
 
 class UserActivity : AppCompatActivity() {
 
-    private lateinit var userAdapter : UserAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,16 +20,11 @@ class UserActivity : AppCompatActivity() {
         val factory = ViewModelFactory.getInstance()
         val viewModel = ViewModelProvider(this,factory)[UserViewModel::class.java]
 
-        userAdapter = UserAdapter()
-        getUserList(viewModel)
-
-    }
-
-    private fun getUserList(viewModel: UserViewModel) {
-        loading_user_list.visibility = View.VISIBLE
+        val userAdapter = UserAdapter()
+        loading_user.visibility = View.VISIBLE
         viewModel.getUserList().observe(this,{
             if(it!= null){
-                loading_user_list.visibility = View.GONE
+                loading_user.visibility = View.GONE
                 userAdapter.setUser(it)
                 userAdapter.notifyDataSetChanged()
             }else{
@@ -42,6 +36,9 @@ class UserActivity : AppCompatActivity() {
             setHasFixedSize(true)
             adapter = userAdapter
         }
+
+
     }
+
 
 }

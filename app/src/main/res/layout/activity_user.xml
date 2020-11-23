@@ -7,7 +7,7 @@
     tools:context=".ui.user.UserActivity">
 
     <ProgressBar
-        android:id="@+id/loading_user_list"
+        android:id="@+id/loading_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"
@@ -20,8 +20,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/rv_user"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_user"
-        />
+        tools:listitem="@layout/item_user" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
